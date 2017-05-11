@@ -8,6 +8,7 @@ import java.lang.instrument.Instrumentation;
 public class AgentPremain {
     public static void premain(String options, Instrumentation inst){
         System.out.println("Doing premain");
-        inst.addTransformer(new TestClassTransformer());
+//        inst.addTransformer(new TransformerWithClassWriter());
+        inst.addTransformer(new TransformerWithInstrumentor());
     }
 }

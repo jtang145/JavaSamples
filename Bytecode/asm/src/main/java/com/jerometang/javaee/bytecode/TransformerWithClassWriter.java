@@ -1,6 +1,6 @@
 package com.jerometang.javaee.bytecode;
 
-import com.jerometang.javaee.bytecode.asm.inst.ClassAdapter;
+import com.jerometang.javaee.bytecode.asm.inst.updateClassWriter.ClassAdapter;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 
@@ -11,7 +11,7 @@ import java.security.ProtectionDomain;
 /**
  * Created by jtang on 5/8/2017.
  */
-public class TestClassTransformer implements ClassFileTransformer{
+public class TransformerWithClassWriter implements ClassFileTransformer{
 
     public byte[] transform(ClassLoader classLoader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain,
                             byte[] classfileBuffer) throws IllegalClassFormatException {
