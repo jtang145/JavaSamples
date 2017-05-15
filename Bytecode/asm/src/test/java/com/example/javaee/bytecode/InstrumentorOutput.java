@@ -1,6 +1,6 @@
-package com.jerometang.javaee.bytecode;
+package com.example.javaee.bytecode;
 
-import com.jerometang.javaee.bytecode.asm.inst.updateClassWriter.ClassAdapter;
+import com.example.javaee.bytecode.asm.inst.updateClassWriter.ClassAdapter;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 

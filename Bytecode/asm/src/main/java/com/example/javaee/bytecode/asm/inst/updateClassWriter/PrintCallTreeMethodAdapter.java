@@ -1,4 +1,4 @@
-package com.jerometang.javaee.bytecode.asm.inst.updateClassWriter;
+package com.example.javaee.bytecode.asm.inst.updateClassWriter;
 
 
 import org.objectweb.asm.MethodVisitor;

@@ -1,4 +1,4 @@
-package com.jerometang.javaee.utils;
+package com.example.javaee.utils;
 
 /**
  * Created by jtang on 5/11/2017.

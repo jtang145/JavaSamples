@@ -1,6 +1,7 @@
-package com.jerometang.javaee.bytecode;
+package com.example.javaee.bytecode;
 
-import com.jerometang.javaee.bytecode.asm.inst.AsmUtils;
+import com.example.javaee.bytecode.asm.inst.AsmUtils;
+import com.example.javaee.bytecode.asm.inst.updateBytecode.DefaultMethodInstrumentor;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.MethodNode;
 
@@ -9,8 +10,6 @@ import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
 import java.util.Arrays;
 import java.util.List;
-
-import static com.jerometang.javaee.bytecode.asm.inst.updateBytecode.DefaultMethodInstrumentor.instrumentMethod;
 
 /**
  * Created by jtang on 5/10/2017.
@@ -44,7 +43,7 @@ public class TransformerWithInstrumentor implements ClassFileTransformer {
             if(!INSTRUMENT_CLASS_LIST.contains(classNode.name.replace('/','.'))){
                 return false;
             }
-            boolean instrumented = instrumentMethod(classNode, methods.get(i), i);
+            boolean instrumented = DefaultMethodInstrumentor.instrumentMethod(classNode, methods.get(i), i);
             modified |= instrumented;
             if(instrumented){
                 AsmUtils.removeLvttAttributes(classNode.name, methods.get(i));

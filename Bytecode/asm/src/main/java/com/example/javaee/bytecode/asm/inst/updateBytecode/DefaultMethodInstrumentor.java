@@ -1,7 +1,7 @@
-package com.jerometang.javaee.bytecode.asm.inst.updateBytecode;
+package com.example.javaee.bytecode.asm.inst.updateBytecode;
 
-import com.jerometang.javaee.bytecode.asm.inst.AsmUtils;
-import com.jerometang.javaee.utils.*;
+import com.example.javaee.bytecode.asm.inst.AsmUtils;
+import com.example.javaee.utils.ReflectionUtils;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.InsnList;

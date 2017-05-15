@@ -1,4 +1,4 @@
-package com.jerometang.javaee.bytecode.asm.inst.updateBytecode;
+package com.example.javaee.bytecode.asm.inst.updateBytecode;
 
 /**
  * Created by jtang on 5/11/2017.

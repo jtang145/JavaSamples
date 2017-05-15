@@ -32,7 +32,7 @@
                             <classpathPrefix>lib/</classpathPrefix>
                         </manifest>
                         <manifestEntries>
-                            <Premain-Class>com.jerometang.javaee.bytecode.AgentPremain</Premain-Class>
+                            <Premain-Class>com.example.javaee.bytecode.AgentPremain</Premain-Class>
                             <Can-Redefine-Classes>true</Can-Redefine-Classes>
                             <Can-Retransform-Classes>true</Can-Retransform-Classes>
                         </manifestEntries>

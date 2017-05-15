@@ -1,4 +1,4 @@
-package com.jerometang.javaee.utils;
+package com.example.javaee.utils;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

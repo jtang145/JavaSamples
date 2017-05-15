@@ -1,4 +1,4 @@
-package com.jerometang.javaee.bytecode;
+package com.example.javaee.bytecode;
 
 /**
  * Created by jtang on 5/8/2017.
