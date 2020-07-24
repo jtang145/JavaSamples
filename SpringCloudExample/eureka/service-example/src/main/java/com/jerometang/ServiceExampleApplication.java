@@ -1,4 +1,4 @@
-package com.jerometang;
+package cn.naches.examples;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;

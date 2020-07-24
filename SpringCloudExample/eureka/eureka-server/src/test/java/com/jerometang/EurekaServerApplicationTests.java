@@ -1,4 +1,4 @@
-package com.jerometang;
+package cn.naches.examples;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

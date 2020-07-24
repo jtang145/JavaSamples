@@ -1,4 +1,4 @@
-package com.jerometang.service;
+package cn.naches.examples.service;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;

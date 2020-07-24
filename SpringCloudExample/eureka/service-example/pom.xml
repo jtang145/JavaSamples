@@ -9,7 +9,7 @@
     <artifactId>service-example</artifactId>
 
 
-    <groupId>com.jerometang</groupId>
+    <groupId>cn.naches.examples</groupId>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

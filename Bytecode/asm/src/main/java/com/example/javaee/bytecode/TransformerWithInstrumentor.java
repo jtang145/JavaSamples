@@ -15,7 +15,7 @@ import java.util.List;
  * Created by jtang on 5/10/2017.
  */
 public class TransformerWithInstrumentor implements ClassFileTransformer {
-    private static List<String> INSTRUMENT_CLASS_LIST = Arrays.asList("com.jerometang.javaee.bytecode.TargetClassTester");
+    private static List<String> INSTRUMENT_CLASS_LIST = Arrays.asList("cn.naches.examples.javaee.bytecode.TargetClassTester");
 
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain,
                             byte[] classfileBuffer) throws IllegalClassFormatException {

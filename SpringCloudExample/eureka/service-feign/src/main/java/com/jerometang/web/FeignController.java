@@ -1,6 +1,6 @@
-package com.jerometang.web;
+package cn.naches.examples.web;
 
-import com.jerometang.service.FeignService;
+import cn.naches.examples.service.FeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

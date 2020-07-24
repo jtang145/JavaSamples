@@ -1,4 +1,4 @@
-package com.jerometang;
+package cn.naches.examples;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
