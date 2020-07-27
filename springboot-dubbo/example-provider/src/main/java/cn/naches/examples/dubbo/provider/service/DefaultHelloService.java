@@ -7,6 +7,6 @@ import org.apache.dubbo.config.annotation.Service;
 public class DefaultHelloService implements HelloService {
 
     public String sayHello(String word) {
-        return "Default Service: " + word;
+        return "Default Service Provider: " + word;
     }
 }
