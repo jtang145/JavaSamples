@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-
-<config>
-    <imageName>com.jtang.pattern.bridge.systemPaint.image.JPGImage</imageName>
-    <osName>com.jtang.pattern.bridge.systemPaint.os.WindowsImp</osName>
-
-</config>
