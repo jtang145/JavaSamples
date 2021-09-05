@@ -31,6 +31,8 @@ public class NIOSelectorServer {
             while (iterator.hasNext()) {
                 SelectionKey key = iterator.next();
 
+                key.attachment();
+
                 if (key.isAcceptable()) {
                     ServerSocketChannel server = (ServerSocketChannel) key.channel();
                     SocketChannel socketChannel = server.accept();
