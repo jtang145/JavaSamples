@@ -1,5 +1,8 @@
 package cn.naches.network.nio;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -10,6 +13,8 @@ import java.util.Iterator;
 import java.util.List;
 
 public class NIOServer {
+    private static Logger logger = LogManager.getLogger(NIOServer.class.getName());
+
     static List<SocketChannel> channelList = new ArrayList();
 
     public static void main(String[] args) throws IOException {
@@ -38,7 +43,9 @@ public class NIOServer {
                 int len = channel.read(byteBuffer);
 
                 if( len > 0){
-                    System.out.println("Received msg: " + new String(byteBuffer.array()));
+                    String msg = new String(byteBuffer.array());
+                    logger.info("Hello, {}!", msg);
+                    System.out.println("Received msg: " + msg);
                 }else if( len == -1){
                     iterator.remove();
                     System.out.println("Client disconnected.");
