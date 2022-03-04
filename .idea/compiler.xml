@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="network-nio" />
+        <module name="rmi-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="network-nio" target="1.5" />
+      <module name="network-nio" target="1.8" />
+      <module name="rmi-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

